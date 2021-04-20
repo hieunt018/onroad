@@ -34,32 +34,6 @@
   <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" ></script>
   <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js" ></script>
 
-  <script text="text/javascript">
-      $('#compatible-car').DataTable({
-        "ajax": "data/car.json",
-        "columns": [
-            { "data": "manufacturer" },
-            { "data": "model" },
-            { "data": "vin" },
-            { "data": "compatible" }
-        ],
-        "language": {
-            "lengthMenu": "Hiển thị _MENU_ mỗi trang",
-            "zeroRecords": "Không tìm thấy xe phù hợp",
-            "info": "Trang hiển thị _PAGE_ trên _PAGES_",
-            "infoEmpty": "Không tìm thấy xe phù hợp",
-            "infoFiltered": "(lọc từ _MAX_ xe)",
-            "search": "Tìm kiếm", 
-            "paginate": {
-              "first":      "Trang đầu",
-              "last":       "Trang cuối",
-              "next":       "Trang tiếp theo",
-              "previous":   "Trang trước"
-            },
-        }
-      });
-  </script>
-
   <!-- =======================================================
   * Template Name: Bootslander - v4.1.0
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
@@ -492,9 +466,35 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <script text="text/javascript">
+    $('#compatible-car').DataTable({
+      "ajax": "data/car.json",
+      "columns": [
+          { "data": "manufacturer", "title": "Hãng sản xuất" },
+          { "data": "model", "title": "Dòng xe" },
+          { "data": "year", "title": "Năm sản xuất"},
+          { "data": "vin", "title": "VIN"},
+          { "data": "compatible", "title": "Tương thích"}
+      ],
+      "language": {
+          "lengthMenu": "Hiển thị _MENU_ mỗi trang",
+          "zeroRecords": "Không tìm thấy xe phù hợp",
+          "info": "Trang hiển thị _PAGE_ trên _PAGES_",
+          "infoEmpty": "Không tìm thấy xe phù hợp",
+          "infoFiltered": "(lọc từ _MAX_ xe)",
+          "search": "Tìm kiếm", 
+          "paginate": {
+            "first":      "Trang đầu",
+            "last":       "Trang cuối",
+            "next":       "Trang tiếp theo",
+            "previous":   "Trang trước"
+          },
+      }
+    });
+</script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
