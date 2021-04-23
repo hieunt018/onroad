@@ -27,7 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/datatable.min.css" rel="stylesheet">
+  <link href="assets/css/datatable.css" rel="stylesheet">
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
@@ -57,8 +57,9 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Trang chủ</a></li>
-          <li><a class="nav-link scrollto" href="#about">Về chúng tôi</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tổng quan</a></li>
           <li><a class="nav-link scrollto" href="#features">Tính năng</a></li>
+          <li><a class="nav-link scrollto" href="#compatible">Tương thích</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Thư viện</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -281,22 +282,22 @@
       </div>
     </section><!-- End Details Section -->
 
-        <!-- ======= Device Compatible Section ======= -->
-        <section id="gallery" class="gallery">
-          <div class="container">
-    
-            <div class="section-title" data-aos="fade-up">
-              <h2>Tính tương thích</h2>
-              <p>Danh sách thiết bị tương thích</p>
-            </div>
-    
-            <div class="row no-gutters" data-aos="fade-left">
-              <table id="compatible-car" class="table table-striped table-bordered" style="width:100%">
-              </table>
-            </div>
-    
-          </div>
-        </section><!-- Device Compatible Section -->
+      <!-- ======= Device Compatible Section ======= -->
+    <section id="compatible" class="gallery">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Tính tương thích</h2>
+          <p>Danh sách thiết bị tương thích</p>
+        </div>
+
+        <div class="row no-gutters" data-aos="fade-left">
+          <table id="compatible-car" class="table table-striped table-bordered" style="width:100%">
+          </table>
+        </div>
+
+      </div>
+    </section><!-- Device Compatible Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
@@ -470,10 +471,9 @@
     $('#compatible-car').DataTable({
       "ajax": "data/car.json",
       "columns": [
-          { "data": "manufacturer", "title": "Hãng sản xuất" },
+          { "data": "manufacturer", "title": "Hãng xe" },
           { "data": "model", "title": "Dòng xe" },
           { "data": "year", "title": "Năm sản xuất"},
-          { "data": "vin", "title": "VIN"},
           { "data": "compatible", "title": "Tương thích"}
       ],
       "language": {
