@@ -64,6 +64,27 @@ div.dataTables_wrapper div.dataTables_filter input {
 	padding-bottom: 2vh;
 }
 
+.dataTables_info {
+	padding-bottom: 1vh;
+}
+
+.page-item.active {
+	color: #2a7837;
+	border-color: #2a7837;
+}
+
+.page-link {
+	color: #2a7837;
+}
+
+.page-link:hover {
+	color: #184620;
+}
+
+.page-link:focus {
+	color: #184620;
+}
+
 #compatible-car {
 	padding-bottom: 2vh;
 }
