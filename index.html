@@ -471,10 +471,18 @@
     $('#compatible-car').DataTable({
       "ajax": "data/car.json",
       "columns": [
-          { "data": "manufacturer", "title": "Hãng xe" },
-          { "data": "model", "title": "Dòng xe" },
-          { "data": "year", "title": "Năm sản xuất"},
-          { "data": "compatible", "title": "Tương thích"}
+          { "data": "ma", "title": "Hãng xe" },
+          { "data": "mo", "title": "Dòng xe" },
+          { "data": "y", "title": "Năm sản xuất"},
+          { "data": "rer", "title": "RPM"},
+          { "data": "rvs", "title": "Tốc độ"},
+          { "data": "raf", "title": "Lượng gió nạp"},
+          { "data": "rap", "title": "Áp suất khí nạp"},
+          { "data": "rct", "title": "Nhiệt độ làm mát"},
+          { "data": "rtp", "title": "Vị trí bướm ga"},
+          { "data": "rfl", "title": "Lượng xăng còn lại"},
+          { "data": "rd", "title": "Mã lỗi DTC"},
+          { "data": "c", "title": "Tương thích"}
       ],
       "language": {
           "lengthMenu": "Hiển thị _MENU_ mỗi trang",

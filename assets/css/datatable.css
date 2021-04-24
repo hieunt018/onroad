@@ -69,7 +69,8 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .page-item.active {
-	color: #2a7837;
+	color: #ffffff;
+	background-color: #2a7837;
 	border-color: #2a7837;
 }
 
