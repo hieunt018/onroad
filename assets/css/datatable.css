@@ -79,6 +79,9 @@ div.dataTables_wrapper div.dataTables_filter input {
 	background-color: #50c342 !important;
 	border-color: #50c342 !important;
 } */
+.table {
+	--bs-table-striped-bg: rgb(86 255 107 / 5%);
+}
 
 .page-link:hover {
 	color: #184620;
