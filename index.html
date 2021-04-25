@@ -471,6 +471,9 @@
     $('#compatible-car').DataTable({
       "ajax": "data/car.json",
       "scrollX": true,
+      "fixedColumns":   {
+        leftColumns: 2
+      },
       "columns": [
           { "data": "ma", "title": "Hãng xe" },
           { "data": "mo", "title": "Dòng xe" },
