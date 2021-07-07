@@ -15,6 +15,20 @@
          "c":true
       },
       {
+         "ma":"Toyota",
+         "mo":"Toyota Vios",
+         "y": 2018,
+         "rer":true,
+         "rvs":true,
+         "raf":true,
+         "rap":false,
+         "rct":true,
+         "rtp":true,
+         "rfl":false,
+         "rd":true,
+         "c":true
+      },
+      {
          "ma":"Nissan",
          "mo":"Nissan Sentra",
          "y":2019,
